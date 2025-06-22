@@ -1,0 +1,242 @@
+.container_1{
+  text-align: center;
+  height: 400px;
+    width: 100%;
+  transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+   animation: projectAnim 1s both;
+background: linear-gradient(to right, rgb(27, 28, 50), #3e3e40, rgb(27, 28, 50));
+}
+
+.container{
+
+ text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding: 50px 20px;
+}
+.container:hover{
+  transform: scale(.97) ;
+  box-shadow: 0 4px 32px 0 #26d0ce55;
+}
+
+.container_1:hover {
+  transform: scale(1.045) rotate(-1deg);
+  box-shadow: 0 4px 32px 0 blueviolet;
+}
+
+@keyframes projectAnim {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+
+
+
+
+
+
+
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 30px;
+  animation: pop-in 1.7s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+
+
+}
+
+.profile-image:hover{
+    transform: scale(1.045) rotate(-1deg);
+  box-shadow: 0 15px 40px 0 #a3a2a255;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0.3) rotate(-50deg); opacity: 0; }
+  25% { transform: scale(1.2) rotate(-25deg); opacity: 0.8; }
+  100% { transform: scale(1) rotate(0); }
+}
+
+
+
+
+
+
+.image_container {
+    height: 1px;
+    width: 1px;
+    margin-left: 100px;
+
+}
+
+
+.text_container {
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(105, 105, 217);
+   margin-left: 100px;
+}
+
+
+
+
+
+
+
+.hey{
+    font-size: 30px;
+    color: rgb(44, 62, 150);
+      animation: slideDown 3s 0.3s cubic-bezier(.68,-0.55,.27,1.55) both;
+}
+
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-100px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+
+
+
+
+.typewrite {
+    font-size: 20px;
+    margin-left: 600px;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation:
+    typing 3s steps(30, end) forwards,
+    blink-caret .3s step-end;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+    
+    
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 230px; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: orangered; }
+  80%,  to     { border-color: transparent; }
+  
+}
+
+
+
+
+.container_2{
+    margin-top: 10px;
+  background-color: transparent;
+  height: 200px;
+    width: 100%;
+  transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+   animation: projectAnim 1s both;
+   background: linear-gradient(to right, rgb(27, 28, 50), #3e3e40, rgb(27, 28, 50));
+}
+
+
+.container_2:hover {
+  transform: scale(1.045) ;
+  box-shadow: 0 4px 32px 0 blueviolet;
+}
+
+
+.about {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 200px;
+  text-align: left;
+  
+  color: rgb(105, 105, 217);
+  
+}
+
+
+.name:hover {
+   transform: scale(1.005) ;
+  box-shadow: 0 4px 32px 0 blueviolet;
+ 
+}
+
+
+
+
+.text {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-section {
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.form-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.message-form input,
+.message-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.message-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.message-form button {
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+}
+
+.message-form button:hover {
+  background-color: #45a049;
+  
+}
+
+
+.RED{
+  color: red;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out forwards;
+}
